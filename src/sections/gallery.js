@@ -56,7 +56,7 @@ const Gallery = () => {
         <SectionHeading
           sx={styles.heading}
           slogan="Working space"
-          title="Let’s meet our interior room decoration"
+          title="NOS REALISATIONS"
         />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>
           {data?.map((item) => (
