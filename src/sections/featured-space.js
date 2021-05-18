@@ -9,9 +9,14 @@ import Image from 'components/image';
 import expand from 'assets/images/icons/expand.png';
 import users from 'assets/images/icons/users.png';
 import wifi from 'assets/images/icons/wifi.png';
-import slider1 from 'assets/images/features/1.png';
-import slider2 from 'assets/images/features/2.webp';
-import slider3 from 'assets/images/features/3.png';
+import slider1 from 'assets/images/features/slider-3.jpg';
+import slider2 from 'assets/images/features/slider-2.jpg';
+import slider3 from 'assets/images/features/slider-1.jpg';
+import slider4 from 'assets/images/features/slider-4.jpg';
+import slider5 from 'assets/images/features/slider-5.jpg';
+import slider6 from 'assets/images/features/slider-6.jpg';
+
+
 
 import SwiperCore, { Autoplay, Pagination, EffectFade } from 'swiper';
 // Import Swiper React components
@@ -24,41 +29,58 @@ const data = {
     {
       id: 1,
       icon: expand,
-      title: '1000 ft2',
-      description: 'you will get 1000ft square space facility here.',
+      title: 'Définition du besoin',
+      description: "Prise de contact et rendez-vous pour définir votre besoin pour chiffrer le montant des travaux",
     },
     {
       id: 2,
       icon: users,
-      title: '80 Members',
-      description: 'you will get advantage to live 80+ member here.',
+      title: "Choix des matériaux",
+      description: 'Mise au point technique et choix des matériaux',
     },
     {
       id: 3,
       icon: wifi,
-      title: '100 mbps',
-      description: 'Internet speed is much better than others.',
+      title: 'Suivi de chantier',
+      description: "Une fois les travaux lancés, notre équipe suit au quotidien l'état d'avancement des travaux.",
     },
   ],
   gallery: [
     {
       id: 1,
       image: slider1,
-      title: 'Kin Co-working Space',
+      title: 'Gros Oeuvre',
       desc: '442 Broadway, New York',
     },
     {
       id: 2,
       image: slider2,
-      title: 'Kin Co-working Space',
+      title: 'Electricité',
       desc: '212 Broadway, Jamaica',
     },
     {
       id: 3,
       image: slider3,
-      title: 'Kin Co-working Space',
+      title: 'Plomberie',
       desc: '212 Broadway, Houston',
     },
+    {
+      id: 4,
+      image: slider4,
+      title: "Travaux Routières",
+      desc: '212 Broadway, Houston'
+    },
+    {
+      id: 5,
+      image: slider5,
+      title: "Amenagement Urbain",
+      desc: '212 Broadway, Houston'
+    }, {
+      id: 6,
+      image: slider6,
+      title: "Terrassement",
+      desc: '212 Broadway, Houston'
+    }
   ],
 };
 
@@ -109,8 +131,8 @@ const FeaturedSpace = () => {
           <Box sx={styles.leftContent}>
             <SectionHeading
               sx={styles.heading}
-              title="Some good place to where can build your startup business"
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="NOS SERVICES"
+              description="AMTG a piloté et mené plusieurs projets d’envergure, situés principalement sur la ville de Casablanca, d’Agadir et de Tanger."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (

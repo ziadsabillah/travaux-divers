@@ -3,7 +3,7 @@ import { jsx, Box, Container, Heading, Text, Button } from 'theme-ui';
 import { rgba } from 'polished';
 
 import Select from 'components/select';
-import bannerBg from 'assets/images/banner-bg.jpg';
+import bannerBg from 'assets/images/home-1.jpeg';
 import mapMarker from 'assets/images/icons/map-marker.png';
 
 const options = [
@@ -41,7 +41,7 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
-              Coworking space that will feel like home.
+            Aménagements Travaux Généraux - Maroc
             </Heading>
             <Text as="p" sx={styles.desc}>
               Whether you’re an established enterprise or a growing startup,
@@ -49,9 +49,9 @@ export default function Banner() {
               work.
             </Text>
             <Box as="form" onSubmit={handleSubmit}>
-              <Select
+              {/* <Select
                 id="location"
-                label="Find workplace"
+                label="Votre"
                 defaultValue={options[1].label}
                 sx={styles.select}
                 icon={mapMarker}
@@ -61,9 +61,9 @@ export default function Banner() {
                     {option.label}
                   </option>
                 ))}
-              </Select>
+              </Select> */}
               <Button type="submit" sx={styles.button} variant="primary">
-                Subscribe
+                Contactez-nous
               </Button>
             </Box>
           </Box>
