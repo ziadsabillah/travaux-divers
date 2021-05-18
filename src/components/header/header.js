@@ -144,7 +144,7 @@ const styles = {
     p: 0,
     '.nav-item': {
       cursor: 'pointer',
-      fontWeight: 400,
+      fontWeight: 900,
       padding: 0,
       margin: '0 20px',
     },
