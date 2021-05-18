@@ -7,29 +7,19 @@ import { rgba } from 'polished';
 const navItems = [
   {
     id: 1,
-    link: '#!',
-    title: 'Home',
+    link: '/',
+    title: 'Accueil',
   },
   {
     id: 2,
-    link: '#!',
-    title: 'Advertise',
+    link: 'clients',
+    title: 'Clients',
   },
   {
     id: 3,
-    link: '#!',
-    title: 'Supports',
-  },
-  {
-    id: 4,
-    link: '#!',
-    title: 'Marketing',
-  },
-  {
-    id: 5,
-    link: '#!',
-    title: 'FAQ',
-  },
+    link: 'portfolio',
+    title: 'Projets',
+  }
 ];
 
 export default function Footer() {
@@ -40,7 +30,7 @@ export default function Footer() {
           <Flex sx={styles.copyright}>
             <Logo white />
             <Text as="span">
-              All right reserved - Design &amp; Developed by RedQ, Inc
+              Tout droit reservé - Design &amp; Developed by MaTechSo, Inc
             </Text>
           </Flex>
 
