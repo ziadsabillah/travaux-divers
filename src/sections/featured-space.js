@@ -50,36 +50,36 @@ const data = {
       id: 1,
       image: slider1,
       title: 'Gros Oeuvre',
-      desc: '442 Broadway, New York',
+      desc: 'Construction',
     },
     {
       id: 2,
       image: slider2,
       title: 'Electricité',
-      desc: '212 Broadway, Jamaica',
+      desc: 'Entreprise',
     },
     {
       id: 3,
       image: slider3,
       title: 'Plomberie',
-      desc: '212 Broadway, Houston',
+      desc: 'Secteur du Batiment',
     },
     {
       id: 4,
       image: slider4,
       title: "Travaux Routières",
-      desc: '212 Broadway, Houston'
+      desc: 'Travaux Publiques'
     },
     {
       id: 5,
       image: slider5,
       title: "Amenagement Urbain",
-      desc: '212 Broadway, Houston'
+      desc: 'Construction'
     }, {
       id: 6,
       image: slider6,
       title: "Terrassement",
-      desc: '212 Broadway, Houston'
+      desc: 'Travaux Publiques'
     }
   ],
 };
