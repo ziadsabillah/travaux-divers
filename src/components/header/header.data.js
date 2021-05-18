@@ -1,7 +1,7 @@
 export default [
   {
     path: 'home',
-    label: 'Acceuil',
+    label: 'Accueil',
   },
   {
     path: 'clients',
@@ -13,11 +13,11 @@ export default [
   },
   {
     path: 'gallery',
-    label: 'Gallery',
+    label: 'Nos Réalisations',
   },
   {
-    path: 'pricing',
-    label: 'Pricing',
+    path: 'contact',
+    label: 'Contact',
   },
   {
     path: 'blog',
