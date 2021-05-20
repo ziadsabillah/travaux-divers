@@ -29,13 +29,13 @@ const data = {
     {
       id: 1,
       icon: expand,
-      title: 'Définition du besoin',
+      title: 'Besoin',
       description: "Prise de contact et rendez-vous pour définir votre besoin pour chiffrer le montant des travaux",
     },
     {
       id: 2,
       icon: users,
-      title: "Choix des matériaux",
+      title: "Matériaux",
       description: 'Mise au point technique et choix des matériaux',
     },
     {
