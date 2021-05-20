@@ -1,6 +1,6 @@
 /** @jsx jsx */
 import { jsx, Box, Flex, Text, Container } from 'theme-ui';
-import { Link } from 'components/link';
+import { NavLink } from 'components/link';
 import Logo from 'components/logo';
 import { rgba } from 'polished';
 
@@ -12,12 +12,12 @@ const navItems = [
   },
   {
     id: 2,
-    link: '#clients',
+    link: 'clients',
     title: 'Clients',
   },
   {
     id: 3,
-    link: '#gallery',
+    link: 'gallery',
     title: 'Projets',
   }
 ];
@@ -37,7 +37,7 @@ export default function Footer() {
           <Flex as="ul" sx={styles.nav}>
             {navItems?.map((item) => (
               <li key={item.id}>
-                <Link path={item.link}>{item.title}</Link>
+                <NavLink label={item.title} path={item.link} />
               </li>
             ))}
           </Flex>
