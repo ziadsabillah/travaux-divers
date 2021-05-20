@@ -12,12 +12,12 @@ const navItems = [
   },
   {
     id: 2,
-    link: 'clients',
+    link: '#clients',
     title: 'Clients',
   },
   {
     id: 3,
-    link: 'portfolio',
+    link: '#gallery',
     title: 'Projets',
   }
 ];
