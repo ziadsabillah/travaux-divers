@@ -41,12 +41,14 @@ export default function Banner() {
         <Box sx={styles.contentWrapper}>
           <Box sx={styles.bannerContent}>
             <Heading as="h1" sx={styles.heroTitle}>
-              Aménagements Travaux Généraux - Maroc
+              Travaux Divers - Maroc
             </Heading>
             <Text as="p" sx={styles.desc}>
-              AMTG est une entreprise de travaux généraux et d’aménagement dirigée par un ingénieur de l’Université de Technologie de Compiègne
-              (UTC) disposant d’une expérience de 10 ans à l’international au sein du groupe Bouygues Construction.
+              Nous sommes une entreprise de travaux généraux et d’aménagement "dirigée par un ingénieur de l’Université de Technologie de Compiègne
+              (UTC) disposant d’une expérience de 10 ans à l’international au sein du groupe Bouygues Construction."
+              *Contenu Exemple
             </Text>
+
             <Box as="form" onSubmit={handleSubmit}>
               {/* <Select
                 id="location"

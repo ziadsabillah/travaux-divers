@@ -11,6 +11,7 @@ import Gallery from 'sections/gallery';
 import Pricing from 'sections/pricing';
 import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
+import Contact from 'sections/contact';
 
 export default function IndexPage() {
   return (
@@ -21,6 +22,7 @@ export default function IndexPage() {
         <FeaturedSpace />
         <Gallery />
         <Clients />
+        <Contact />
       </Layout>
     </ThemeProvider>
   );

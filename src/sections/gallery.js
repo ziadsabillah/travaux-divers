@@ -55,7 +55,7 @@ const Gallery = () => {
       <Container sx={styles.container}>
         <SectionHeading
           sx={styles.heading}
-          slogan="Working space"
+          slogan="Projets que nous aimons"
           title="NOS REALISATIONS"
         />
         <Box as={Masonry} options={masonryOptions} sx={styles.galleryWrapper}>

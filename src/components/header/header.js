@@ -54,8 +54,11 @@ export default function Header() {
                     </li>
                   ))}
                 </Box>
-                <Button sx={styles.joinNow} variant="primaryMd">
-                  Demande de devis
+                <Button href="#contact" sx={styles.joinNow} variant="primaryMd">
+                  <NavLink
+                    path='contact'
+                    label='Demande de devis'
+                  />
                 </Button>
               </Flex>
 
