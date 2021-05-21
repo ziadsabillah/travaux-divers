@@ -132,7 +132,7 @@ const FeaturedSpace = () => {
             <SectionHeading
               sx={styles.heading}
               title="NOS SERVICES"
-              description="AMTG a piloté et mené plusieurs projets d’envergure, situés principalement sur la ville de Casablanca, d’Agadir et de Tanger."
+              description="Nous avons piloté et mené plusieurs projets d’envergure, situés principalement sur la ville de Casablanca, d’Agadir et de Tanger."
             />
             <Box sx={styles.featureWrapper}>
               {data?.feature?.map((feature) => (
