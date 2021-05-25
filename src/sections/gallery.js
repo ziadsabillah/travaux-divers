@@ -5,12 +5,12 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 
-import gallery1 from 'assets/images/gallery/1.png';
-import gallery2 from 'assets/images/gallery/2.png';
-import gallery3 from 'assets/images/gallery/3.png';
-import gallery4 from 'assets/images/gallery/4.png';
-import gallery5 from 'assets/images/gallery/5.png';
-import gallery6 from 'assets/images/gallery/6.png';
+import gallery1 from 'assets/images/gallery/1.jpeg';
+import gallery2 from 'assets/images/gallery/2.jpg';
+import gallery3 from 'assets/images/gallery/3.jpg';
+import gallery4 from 'assets/images/gallery/4.jpg';
+import gallery5 from 'assets/images/gallery/5.jpeg';
+import gallery6 from 'assets/images/gallery/6.jpeg';
 
 const data = [
   {
