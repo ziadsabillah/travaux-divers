@@ -1,6 +1,5 @@
 /** @jsx jsx */
 import { jsx, Box, Container, Image, Button } from 'theme-ui';
-import { RiArrowRightSLine } from 'react-icons/ri';
 import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
@@ -63,9 +62,6 @@ const Gallery = () => {
             <GalleryCard key={item.id} item={item} />
           ))}
         </Box>
-        <Button variant="muted" sx={styles.button}>
-          Voir Plus <RiArrowRightSLine size="20px" />
-        </Button>
       </Container>
     </Box>
   );
