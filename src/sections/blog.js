@@ -15,21 +15,21 @@ const data = [
     thumb: thumb1,
     commentCount: 22,
     link: '#!',
-    title: `How to work with prototype design with adobe xd featuring tools`,
+    title: `Titre du Blog 1`,
   },
   {
     id: 2,
     thumb: thumb2,
     commentCount: 15,
     link: '#!',
-    title: `Create multiple artboard by using figma prototyping development`,
+    title: `Titre du Blog 2`,
   },
   {
     id: 3,
     thumb: thumb3,
     commentCount: 18,
     link: '#!',
-    title: `Convert your web layout theming easily with sketch zeplin extension`,
+    title: `Titre du Blog 3`,
   },
 ];
 
@@ -82,8 +82,8 @@ const Blog = () => {
       <Container>
         <SectionHeading
           sx={styles.heading}
-          slogan="Blog Post"
-          title="Popular blog post we update everyday"
+          slogan="Blog"
+          title="Nos Actualités"
         />
         <Slider sx={styles.blogWrapper} {...settings}>
           {data?.map((post) => (

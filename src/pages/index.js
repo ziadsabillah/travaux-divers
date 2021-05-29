@@ -24,6 +24,7 @@ export default function IndexPage() {
         <Gallery />
         <Numbers />
         <Clients />
+        <Blog />
         <Contact />
       </Layout>
     </ThemeProvider>
