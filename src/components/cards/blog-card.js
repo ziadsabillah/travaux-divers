@@ -16,7 +16,7 @@ const BlogPost = ({ post }) => {
         </Heading>
         <Text as="span" sx={styles.commentCount}>
           <Image loading="lazy" src={chat} alt="chat icon" />
-          {post?.commentCount} Comments
+          {post?.commentCount} Commentaires
         </Text>
       </Box>
     </Box>
