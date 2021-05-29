@@ -8,6 +8,10 @@ export default [
     label: 'Clients',
   },
   {
+    path: 'blog',
+    label: 'Actualités'
+  },
+  {
     path: 'gallery',
     label: 'Nos Réalisations',
   },
