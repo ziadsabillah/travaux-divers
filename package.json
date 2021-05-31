@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@next/env": "^10.2.0",
+    "framer-motion": "^4.1.17",
     "next": "^10.2.3",
     "next-compose-plugins": "^2.2.0",
     "next-optimized-images": "^2.6.2",
@@ -20,6 +21,7 @@
     "react-dom": "16.13.1",
     "react-ga": "^3.1.2",
     "react-icons": "^3.11.0",
+    "react-intersection-observer": "^8.32.0",
     "react-masonry-component": "^6.2.1",
     "react-reveal": "^1.2.2",
     "react-scroll": "^1.8.1",
