@@ -4,6 +4,9 @@ import Masonry from 'react-masonry-component';
 import SectionHeading from 'components/section-heading';
 import GalleryCard from 'components/cards/gallery-card';
 
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
+
 import gallery1 from 'assets/images/gallery/1.jpeg';
 import gallery2 from 'assets/images/gallery/2.jpg';
 import gallery3 from 'assets/images/gallery/3.jpg';

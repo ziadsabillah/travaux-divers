@@ -13,6 +13,10 @@ import Blog from 'sections/blog';
 import Subscription from 'sections/subscription';
 import Contact from 'sections/contact';
 import Numbers from 'sections/numbers';
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
+
+
 
 export default function IndexPage() {
   return (
@@ -20,7 +24,16 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Travaux Divers - MaTechSo Template" />
         <Banner />
-        <FeaturedSpace />
+        <InView threshold="0.5">
+          {({ ref, inView }) => (
+            <motion.div ref={ref} initial={{ opacity: 0 }}
+            animate={inView ? {opacity: 1} : {opacity: 0}}
+            transition={{ duration: 0.8 }}>
+              <FeaturedSpace    />
+            </motion.div>
+          )}
+        </InView>
+        
         <Gallery />
         <Numbers />
         <Clients />
