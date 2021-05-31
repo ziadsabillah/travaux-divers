@@ -33,8 +33,16 @@ export default function IndexPage() {
             </motion.div>
           )}
         </InView>
-        
-        <Gallery />
+        <InView threshold={0.5}>
+          {({ref, inView}) => (
+            <motion.div style={{ overflowX: 'hidden' }} ref={ref} initial={{ opacity: 0, x: 100  }}
+              animate={inView ? {opacity: 1, x: 0} : {opacity: 0, x: 100}}
+              transition={{ duration: 0.5 }}>
+                <Gallery />
+            </motion.div>
+          )}
+        </InView>
+      
         <Numbers />
         <Clients />
         <Blog />
