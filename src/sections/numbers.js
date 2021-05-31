@@ -1,10 +1,13 @@
 import Feature from 'components/cards/feature';
-import { jsx, Box, Container, Heading, Text } from 'theme-ui';
+import { Box, Container, Text } from 'theme-ui';
 import Icon from 'components/icon';
 import employeeIcon from 'assets/images/icons/icon-employee.png';
 import engineerIcon from 'assets/images/icons/icon-engineer.png';
 import machineIcon from 'assets/images/icons/icon-machines.png';
 import projectsIcon from 'assets/images/icons/icon-projects.png';
+
+import { motion } from 'framer-motion';
+import { InView } from 'react-intersection-observer';
 
 import CountUp from 'react-countup';
 
@@ -36,34 +39,70 @@ const Numbers = () => {
             <Box id='numbers' sx={styles.section} as="section">
                 <Container>
                     <Box sx={styles.sectionWrapper}>
-                        <Box as="div">
-                            <Icon sx={styles.icon} path={data.employees.icon} />
-                            <Text sx={styles.title}>Salariés</Text>
-                            <Text sx={styles.number}>
-                                <CountUp  end={data.employees.number} />
-                            </Text>
-                        </Box>
-                        <Box as="div">
-                            <Icon sx={styles.icon} path={data.engineers.icon} />
-                            <Text sx={styles.title}>Ingénieurs</Text>
-                            <Text sx={styles.number}>
-                                <CountUp end={data.engineers.number} />
-                            </Text>
-                        </Box>
-                        <Box as="div">
-                            <Icon sx={styles.icon} path={data.machines.icon} />
-                            <Text sx={styles.title}>Machines</Text>
-                            <Text sx={styles.number}>
-                                <CountUp  end={data.machines.number} />
-                            </Text>
-                        </Box>
-                        <Box as="div">
-                            <Icon sx={styles.icon} path={data.projects.icon} />
-                            <Text sx={styles.title}>Projets</Text>
-                            <Text sx={styles.number}>
-                                <CountUp end={data.projects.number} />
-                            </Text>
-                        </Box>
+                        <InView threshold="0.15">
+                            {({ ref, inView }) => (
+                                <motion.div ref={ref} initial={{ opacity: 0 }}
+                                    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                                    transition={{ duration: 0.1 }}>
+                                    <Box as="div">
+                                        <Icon sx={styles.icon} path={data.employees.icon} />
+                                        <Text sx={styles.title}>Salariés</Text>
+                                        <Text sx={styles.number}>
+                                            <CountUp end={data.employees.number} />
+                                        </Text>
+                                    </Box>
+                                </motion.div>
+                            )}
+                        </InView>
+
+                        <InView threshold="0.15">
+                            {({ ref, inView }) => (
+                                <motion.div ref={ref} initial={{ opacity: 0 }}
+                                    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                                    transition={{ duration: 0.3 }}>
+                                    <Box as="div">
+                                        <Icon sx={styles.icon} path={data.engineers.icon} />
+                                        <Text sx={styles.title}>Ingénieurs</Text>
+                                        <Text sx={styles.number}>
+                                            <CountUp end={data.engineers.number} />
+                                        </Text>
+                                    </Box>
+                                </motion.div>
+                            )}
+                        </InView>
+                        <InView threshold="0.15">
+                            {({ ref, inView }) => (
+                                <motion.div ref={ref} initial={{ opacity: 0 }}
+                                    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                                    transition={{ duration: 0.6 }}>
+                                    <Box as="div">
+                                        <Icon sx={styles.icon} path={data.machines.icon} />
+                                        <Text sx={styles.title}>Machines</Text>
+                                        <Text sx={styles.number}>
+                                            <CountUp end={data.machines.number} />
+                                        </Text>
+                                    </Box>
+                                </motion.div>
+                            )}
+                        </InView>
+
+                        <InView threshold="0.15">
+                            {({ ref, inView }) => (
+                                <motion.div ref={ref} initial={{ opacity: 0 }}
+                                    animate={inView ? { opacity: 1 } : { opacity: 0 }}
+                                    transition={{ duration: 0.9 }}>
+                                    <Box as="div">
+                                        <Icon sx={styles.icon} path={data.projects.icon} />
+                                        <Text sx={styles.title}>Projets</Text>
+                                        <Text sx={styles.number}>
+                                            <CountUp end={data.projects.number} />
+                                        </Text>
+                                    </Box>
+                                </motion.div>
+                            )}
+                        </InView>
+
+
                     </Box>
                 </Container>
             </Box>
