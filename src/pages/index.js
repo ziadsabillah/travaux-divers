@@ -33,11 +33,11 @@ export default function IndexPage() {
             </motion.div>
           )}
         </InView>
-        <InView threshold={0.5}>
+        <InView threshold="0.25">
           {({ref, inView}) => (
             <motion.div ref={ref} initial={{ opacity: 0 }}
               animate={inView ? {opacity: 1} : {opacity: 0}}
-              transition={{ duration: 0.5 }}>
+              transition={{ duration: 0.8 }}>
                 <Gallery />
             </motion.div>
           )}
