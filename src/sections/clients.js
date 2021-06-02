@@ -3,36 +3,30 @@ import { jsx, Box, Button, Container, Image } from 'theme-ui';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import Slider from 'react-slick';
 import SectionHeading from 'components/section-heading';
-import uber from 'assets/images/clients/uber.png';
-import google from 'assets/images/clients/google.png';
-import paypal from 'assets/images/clients/paypal.png';
-import microsoft from 'assets/images/clients/microsoft.png';
-import dribbble from 'assets/images/clients/dribbble.png';
+import cafc from 'assets/images/clients/cafc.png';
+import bankmaghrib from 'assets/images/clients/bank-al-maghrib.png';
+import anatole from 'assets/images/clients/anatole-france.png';
+import aefe from 'assets/images/clients/aefe.png';
 const clients = [
   {
     id: 1,
-    name: 'uber',
-    logo: uber,
+    name: 'Cafc',
+    logo: cafc,
   },
   {
     id: 2,
-    name: 'Google',
-    logo: google,
+    name: 'Bank Al Maghrib',
+    logo: bankmaghrib,
   },
   {
     id: 3,
-    name: 'PayPal',
-    logo: paypal,
+    name: 'Aefe',
+    logo: aefe,
   },
   {
     id: 4,
-    name: 'Microsoft',
-    logo: microsoft,
-  },
-  {
-    id: 5,
-    name: 'Dribbble',
-    logo: dribbble,
+    name: 'Anatole',
+    logo: anatole,
   },
 ];
 

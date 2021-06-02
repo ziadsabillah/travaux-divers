@@ -142,6 +142,7 @@ const styles = {
     number: {
         fontSize: '30px',
         mt: '15px',
+        color: '#46B3FE',
         fontWeight: 'bold'
     }
 }

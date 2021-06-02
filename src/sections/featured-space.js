@@ -6,9 +6,9 @@ import SectionHeading from 'components/section-heading';
 import Progressbar from 'components/progressbar';
 import Feature from 'components/cards/feature';
 import Image from 'components/image';
-import expand from 'assets/images/icons/expand.png';
-import users from 'assets/images/icons/users.png';
-import wifi from 'assets/images/icons/wifi.png';
+import expand from 'assets/images/icons/add-anchor.png';
+import check from 'assets/images/icons/check.png';
+import suivi from 'assets/images/icons/suivi.png';
 import slider1 from 'assets/images/features/slider-3.jpg';
 import slider2 from 'assets/images/features/slider-2.jpg';
 import slider3 from 'assets/images/features/slider-1.jpg';
@@ -34,13 +34,13 @@ const data = {
     },
     {
       id: 2,
-      icon: users,
+      icon: check,
       title: "Matériaux",
       description: 'Mise au point technique et choix des matériaux',
     },
     {
       id: 3,
-      icon: wifi,
+      icon: suivi,
       title: 'Suivi de chantier',
       description: "Une fois les travaux lancés, notre équipe suit au quotidien l'état d'avancement des travaux.",
     },
