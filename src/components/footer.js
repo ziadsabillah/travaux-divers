@@ -80,6 +80,7 @@ const styles = {
     alignItems: 'center',
     padding: 0,
     // display: ['flex'],
+    cursor: 'pointer',
     flexWrap: ['wrap', null, null, 'unset'],
     justifyContent: ['center', null, null, null],
     mt: [5, null, null, null, 0],
