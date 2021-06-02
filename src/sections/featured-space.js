@@ -9,6 +9,7 @@ import Image from 'components/image';
 import expand from 'assets/images/icons/add-anchor.png';
 import check from 'assets/images/icons/check.png';
 import suivi from 'assets/images/icons/suivi.png';
+import guarantee from 'assets/images/icons/guarantee.png';
 import slider1 from 'assets/images/features/slider-3.jpg';
 import slider2 from 'assets/images/features/slider-2.jpg';
 import slider3 from 'assets/images/features/slider-1.jpg';
@@ -44,6 +45,12 @@ const data = {
       title: 'Suivi de chantier',
       description: "Une fois les travaux lancés, notre équipe suit au quotidien l'état d'avancement des travaux.",
     },
+    {
+      id: 4,
+      icon: guarantee,
+      title: 'Garantie',
+      description: "Après la remise des clés, nous vous assurons un suivi du parfait achèvement.",
+    }
   ],
   gallery: [
     {
@@ -214,8 +221,8 @@ const styles = {
       'repeat(2,1fr)',
       null,
       null,
-      'repeat(3,180px)',
-      'repeat(3,1fr)',
+      'repeat(2,180px)',
+      'repeat(2,1fr)',
     ],
     justifyContent: ['unset', null, null, 'center', 'flex-start'],
   },

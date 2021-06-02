@@ -14,16 +14,10 @@ const Subscription = () => {
         <Box sx={styles.content}>
           <SectionHeading
             sx={styles.heading}
-            title="Subscribe to get best offers."
-            description="By subscribing with your mail, you will agree with terms"
+            title="PRÊT POUR LANCER VOTRE PROJET ?"
           />
-          <Flex as="form" sx={styles.form} onSubmit={handleSubmit}>
-            <Box as="label" htmlFor="email" variant="styles.srOnly">
-              Email
-            </Box>
-            <Input type="email" id="email" placeholder="Enter your email" />
-            <Button variant="white">Subscribe us</Button>
-          </Flex>
+            
+            <Button variant="white"><a href="#contact">Contactez-nous</a></Button>
         </Box>
       </Container>
     </Box>
@@ -46,6 +40,7 @@ const styles = {
       lineHeight: 1.4,
       letterSpacing: 'heading',
     },
+  
     p: {
       lineHeight: [2, 3.12],
       mt: [20, 0],
@@ -57,6 +52,10 @@ const styles = {
     maxWidth: '555px',
     margin: '0 auto',
     textAlign: 'center',
+    a: {
+      textDecoration: 'none',
+      textColor: '#020718'
+    },
   },
   form: {
     alignItems: 'center',

@@ -54,6 +54,7 @@ export default function IndexPage() {
           )}
         </InView>
         <Blog />
+        <Subscription />
         <Contact />
       </Layout>
     </ThemeProvider>
