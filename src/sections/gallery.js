@@ -13,38 +13,44 @@ import gallery3 from 'assets/images/gallery/3.jpg';
 import gallery4 from 'assets/images/gallery/4.jpg';
 import gallery5 from 'assets/images/gallery/5.jpeg';
 import gallery6 from 'assets/images/gallery/6.jpeg';
+import gallery7 from 'assets/images/gallery/project-6.jpeg';
 
 const data = [
   {
     id: 1,
     image: gallery1,
-    title: 'Projet 1',
+    title: 'Plateau Casanearshore',
   },
   {
     id: 2,
     image: gallery2,
-    title: 'Projet 2',
+    title: 'Mitscorp',
   },
   {
     id: 3,
     image: gallery3,
-    title: 'Projet 3',
+    title: 'Thaïs',
   },
   {
     id: 4,
     image: gallery4,
-    title: 'Projet 4',
+    title: 'Park View Square',
   },
   {
     id: 6,
     image: gallery6,
-    title: 'Projet 5',
+    title: 'Devcorp',
   },
   {
     id: 5,
     image: gallery5,
-    title: 'Projet 6',
+    title: "Cabinet d'Avocats AGJAL"
   },
+  {
+    id: 6,
+    image: gallery7,
+    title: "Made Architecture",
+  }
 ];
 
 const masonryOptions = {
