@@ -14,6 +14,7 @@ import gallery4 from 'assets/images/gallery/4.jpg';
 import gallery5 from 'assets/images/gallery/5.jpeg';
 import gallery6 from 'assets/images/gallery/6.jpeg';
 import gallery7 from 'assets/images/gallery/project-6.jpeg';
+import gallery8 from 'assets/images/gallery/clinic.jpeg';
 
 const data = [
   {
@@ -50,6 +51,11 @@ const data = [
     id: 6,
     image: gallery7,
     title: "Made Architecture",
+  },
+  {
+    id: 7,
+    image: gallery8,
+    title: "Clinique Val Anfa",
   }
 ];
 
