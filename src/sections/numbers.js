@@ -43,7 +43,7 @@ const Numbers = () => {
                             {({ ref, inView }) => (
                                 <motion.div ref={ref} initial={{ opacity: 0 }}
                                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                                    transition={{ duration: 0.1 }}>
+                                    transition={{ duration: 0.5 }}>
                                     <Box as="div">
                                         <Icon sx={styles.icon} path={data.employees.icon} />
                                         <Text sx={styles.title}>Salariés</Text>
@@ -59,7 +59,7 @@ const Numbers = () => {
                             {({ ref, inView }) => (
                                 <motion.div ref={ref} initial={{ opacity: 0 }}
                                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                                    transition={{ duration: 0.3 }}>
+                                    transition={{ duration: 1 }}>
                                     <Box as="div">
                                         <Icon sx={styles.icon} path={data.engineers.icon} />
                                         <Text sx={styles.title}>Ingénieurs</Text>
@@ -74,7 +74,7 @@ const Numbers = () => {
                             {({ ref, inView }) => (
                                 <motion.div ref={ref} initial={{ opacity: 0 }}
                                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                                    transition={{ duration: 0.6 }}>
+                                    transition={{ duration: 1.5 }}>
                                     <Box as="div">
                                         <Icon sx={styles.icon} path={data.machines.icon} />
                                         <Text sx={styles.title}>Machines</Text>
@@ -90,7 +90,7 @@ const Numbers = () => {
                             {({ ref, inView }) => (
                                 <motion.div ref={ref} initial={{ opacity: 0 }}
                                     animate={inView ? { opacity: 1 } : { opacity: 0 }}
-                                    transition={{ duration: 0.9 }}>
+                                    transition={{ duration: 2 }}>
                                     <Box as="div">
                                         <Icon sx={styles.icon} path={data.projects.icon} />
                                         <Text sx={styles.title}>Projets</Text>
