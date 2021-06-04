@@ -90,8 +90,8 @@ const Clients = () => {
     <Box id="clients" as="section" sx={styles.section}>
       <Container>
         <SectionHeading
-          slogan="Recontrer nos clients"
-          title="Ils nous font confiance."
+          slogan="NOS PARTENAIRES"
+          description="NOS PARTENAIRES PERMETTENT DE RÉALISER DE BONNES EXPÉRIENCES EN CONSTRUCTION ET EN RÉNOVATION EN PROPOSANT NOS PRODUITS, NOTRE EXPERTISE EN CONSEIL ET LES PRODUITS DE NOS PARTENAIRES"
         />
         <Slider sx={styles.clients} {...settings}>
           {clients?.map((client) => (
