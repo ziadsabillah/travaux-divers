@@ -2,6 +2,8 @@
 import { jsx, Box, Flex, Container, Input, Button } from 'theme-ui';
 import SectionHeading from 'components/section-heading';
 import { rgba } from 'polished';
+import { NavLink } from 'components/link';
+
 
 const Subscription = () => {
   const handleSubmit = (e) => {
@@ -17,7 +19,9 @@ const Subscription = () => {
             title="PRÊT POUR LANCER VOTRE PROJET ?"
           />
             
-            <Button variant="white"><a href="#contact">Contactez-nous</a></Button>
+            <Button variant="white">
+              <NavLink path="contact" label="Contactez-nous" />
+            </Button>
         </Box>
       </Container>
     </Box>
