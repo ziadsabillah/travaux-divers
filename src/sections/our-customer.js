@@ -21,7 +21,7 @@ const OurCustomer = () => {
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
-                Learn more <RiArrowRightSLine size="20px" />
+                Savoir plus. <RiArrowRightSLine size="20px" />
               </Link>
             </Box>
           </Box>
