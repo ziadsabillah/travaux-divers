@@ -15,6 +15,7 @@ import Contact from 'sections/contact';
 import Numbers from 'sections/numbers';
 import { motion } from 'framer-motion';
 import { InView } from 'react-intersection-observer';
+import OurCustomer from 'sections/our-customer';
 
 
 
@@ -55,6 +56,7 @@ export default function IndexPage() {
         </InView>
         <Blog />
         <Subscription />
+        <OurCustomer />
         <Contact />
       </Layout>
     </ThemeProvider>
