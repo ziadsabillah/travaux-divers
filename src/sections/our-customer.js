@@ -1,30 +1,65 @@
 /** @jsx jsx */
-import { jsx, Box, Container, Image, Flex, Link } from 'theme-ui';
-import { RiArrowRightSLine } from 'react-icons/ri';
+import { jsx, Box, Button, Container, Image, Flex, Link } from 'theme-ui';
+import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import SectionHeading from 'components/section-heading';
-import customer from 'assets/images/customer.png';
+import Slider from 'react-slick';
+import cafc from 'assets/images/clients/cafc.png';
+
+
+
+function SlickArrow({ className, onClick, control }) {
+  return (
+    <Button
+      variant="text"
+      className={className}
+      sx={styles.paginationButton}
+      onClick={onClick}
+    >
+      {control === 'prev' ? (
+        <BsArrowLeft size="32px" />
+      ) : (
+        <BsArrowRight size="32px" />
+      )}
+    </Button>
+  );
+}
+
 
 const OurCustomer = () => {
+
+  const settings = {
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    speed: 500,
+    nextArrow: <SlickArrow control="next" />,
+    prevArrow: <SlickArrow control="prev" />,
+    infinite: true,
+  };
+
+
   return (
-    <Box as="section" sx={styles.section}>
+    <Box id="testimonials" as="section" sx={styles.section}>
       <Container>
-        <Flex sx={styles.contentWrapper}>
-          <Flex as="figure" sx={styles.illustration}>
-            <Image loading="lazy" src={customer} alt="customer" />
-          </Flex>
-          <Box sx={styles.rightContent}>
-            <SectionHeading
-              sx={styles.heading}
-              title="We have more than thousand of worldwide happy customer."
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
-            />
-            <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
-              <Link variant="links.learnMore" sx={styles.link} href="#!">
-                Learn more <RiArrowRightSLine size="20px" />
-              </Link>
+        <SectionHeading slogan="NOS CLIENTS" description="Nos clients satisfaits!" />
+        <Slider {...settings}>
+          <Box as="div" sx={styles.reviewItem}>
+            <Box as="div" sx={styles.reviewDetails}>
+              <Box as="div" sx={styles.reviewName}>
+                Megan
+                </Box>
+              <Box as="div" sx={styles.reviewPost}>
+                CEO
+                </Box>
             </Box>
+            <Box as="quote" sx={styles.reviewInfo}>
+              <p>
+                Hey there this is a review
+              </p>
+            </Box>
+
           </Box>
-        </Flex>
+        </Slider>
+
       </Container>
     </Box>
   );
@@ -37,6 +72,69 @@ const styles = {
     pt: [60, 60, 60, 60, 80, 9],
     pb: [30, 30, 6],
   },
+  reviewItem: {
+    maxWidth: '700px',
+  },
+  reviewDetails: {
+    float: 'left',
+    pl: '10px',
+
+  },
+  reviewName: {
+    margin: '24px 0 0',
+    fontSize: '17px',
+    color: '#2c3e50',
+    fontWeight: '900',
+    padding: '0',
+    textTransform: 'uppercase',
+    display: 'block'
+  },
+  reviewPost: {
+    color: '#2c3e50',
+    display: 'block',
+
+  },
+  reviewInfo: {
+    mt: '0',
+    clear: 'both',
+    p: {
+      fontStyle: 'italic',
+      color: '#00bbaa',
+      textAlign: 'center',
+    },
+  },
+  pagination: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 5,
+  },
+  paginationButton: {
+    minHeight: '30px',
+    padding: 0,
+    position: 'absolute',
+    bottom: '-60px',
+    ':focus': {
+      outline: '0 none',
+    },
+    svg: {
+      transition: 'all 0.2s ease-in-out 0s',
+    },
+    '&.slick-disabled': {
+      color: '#BBC7D7',
+      svg: {
+        transform: 'scale(0.8)',
+      },
+    },
+    '&.slick-prev': {
+      left: 'calc(50% - 16px)',
+      transform: 'translateX(-50%)',
+    },
+    '&.slick-next': {
+      transform: 'translateX(50%)',
+      right: 'calc(50% - 16px)',
+    },
+  },
   contentWrapper: {
     display: ['flex'],
     alignItems: ['center'],
@@ -46,6 +144,19 @@ const styles = {
       'column-reverse',
       'row',
     ],
+  },
+  customers: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-around',
+    pt: [0, 0, 25, 25, 25, 6],
+    '&.slick-slider': {
+      marginBottom: '40px',
+    },
+    '.slick-track': {
+      display: 'flex',
+      alignItems: 'center',
+    },
   },
   illustration: {
     alignItems: ['flex-start'],
