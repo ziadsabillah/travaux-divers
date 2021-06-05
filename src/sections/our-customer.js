@@ -15,8 +15,9 @@ const OurCustomer = () => {
           <Box sx={styles.rightContent}>
             <SectionHeading
               sx={styles.heading}
-              title="We have more than thousand of worldwide happy customer."
-              description="Co-working offers beautifully crafted workspaces where people can create, connect, and grow their businesses at prime locations in multiple cities."
+              title="NOTRE BUT ULTIME EST AVANT TOUT, VOUS SATISFAIRE."
+              description="Né de l’expérience, et de celle heureuse ou malheureuse de tout un chacun qui s’est un jour lancé dans un projet de construction de rénovation de travaux. Parce que votre projet représente sans doute une étape importante de votre vie, il mérite pour nous autant de cette attention que vous-même lui attacher.
+              Vous qui avez un projet de Construction ou de Rénovation de Travaux, n’hésitez pas à nous contacter ."
             />
             <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
