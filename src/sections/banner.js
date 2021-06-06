@@ -5,6 +5,7 @@ import { rgba } from 'polished';
 import Select from 'components/select';
 import bannerBg from 'assets/images/home-1.jpeg';
 import mapMarker from 'assets/images/icons/map-marker.png';
+import { NavLink } from 'components/link';
 
 const options = [
   {
@@ -64,7 +65,7 @@ export default function Banner() {
                 ))}
               </Select> */}
               <Button type="submit" sx={styles.button} variant="primary">
-                Contactez-nous
+               <NavLink path="contact" label="Contactez-nous" />
               </Button>
             </Box>
           </Box>
