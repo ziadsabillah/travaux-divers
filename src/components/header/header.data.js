@@ -12,11 +12,11 @@ export default [
     label: 'Actualités'
   },
   {
-    path: 'gallery',
-    label: 'Nos Réalisations',
+    path: 'feature',
+    label: 'Services'
   },
   {
-    path: 'contact',
-    label: 'Contact',
+    path: 'gallery',
+    label: 'Nos Réalisations',
   }
 ];
