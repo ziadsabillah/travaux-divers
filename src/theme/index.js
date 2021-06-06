@@ -128,6 +128,7 @@ export default {
     logo: {
       display: 'inline-flex',
       alignItems: 'flex-start',
+      width: '120px',
     },
     learnMore: {
       display: 'inline-flex',
