@@ -4,6 +4,14 @@ export default [
     label: 'Accueil',
   },
   {
+    path: 'feature',
+    label: 'Services'
+  },
+  {
+    path: 'gallery',
+    label: 'Nos Réalisations',
+  },
+  {
     path: 'clients',
     label: 'Clients',
   },
@@ -11,12 +19,4 @@ export default [
     path: 'blog',
     label: 'Actualités'
   },
-  {
-    path: 'gallery',
-    label: 'Nos Réalisations',
-  },
-  {
-    path: 'contact',
-    label: 'Contact',
-  }
 ];

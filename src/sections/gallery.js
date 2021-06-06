@@ -38,22 +38,22 @@ const data = [
     title: 'Park View Square',
   },
   {
-    id: 6,
+    id: 5,
     image: gallery6,
     title: 'Devcorp',
   },
   {
-    id: 5,
+    id: 6,
     image: gallery5,
     title: "Cabinet d'Avocats AGJAL"
   },
   {
-    id: 6,
+    id: 7,
     image: gallery7,
     title: "Made Architecture",
   },
   {
-    id: 7,
+    id: 8,
     image: gallery8,
     title: "Clinique Val Anfa",
   }

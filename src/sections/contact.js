@@ -21,10 +21,10 @@ const Contact = () => {
                             Nom
                         </Box>
                         <Input type="name" id="name" placeholder="Votre Nom" />
-                        
+
                     </Flex>
                     <Flex as="form" sx={styles.form}>
-                    <Box as="label" htmlFor="entrepriseName" variant="styles.srOnly">
+                        <Box as="label" htmlFor="entrepriseName" variant="styles.srOnly">
                             Nom du société
                         </Box>
                         <Input type="text" id="entrepriseName" placeholder="Raison Social" />
@@ -39,7 +39,7 @@ const Contact = () => {
                         </Box>
                         <Textarea rows={8} type="text" id="message" placeholder="Entrer votre message" />
                     </Flex>
-                    <Flex as="form" sx={styles.formBtn  }>
+                    <Flex as="form" sx={styles.formBtn}>
                         <Button variant="black">Envoyer</Button>
                     </Flex>
 
@@ -80,7 +80,7 @@ const styles = {
             minHeight: [50, 50, 60],
             width: ['100%', 'auto'],
             '::placeholder': {
-              color: rgba('#000', 0.8),
+                color: rgba('#000', 0.8),
             },
         },
         textarea: {
@@ -97,13 +97,23 @@ const styles = {
             minHeight: [50, 50, 60],
             width: ['100%', 'auto'],
             '::placeholder': {
-              color: rgba('#000', 0.8),
+                color: rgba('#000', 0.8),
             },
         }
     },
     formBtn: {
         display: ['block', 'flex'],
         justifyContent: 'center',
-        margin: '20px'
+        margin: '20px',
+        button: {
+            border: '1px solid #4BB479',
+            '&:hover': {
+                cursor: 'pointer',
+                background: '#fff',
+                color: '#4BB479',
+                border: '1px solid #4BB479'
+            },
+        }
+
     }
 }
