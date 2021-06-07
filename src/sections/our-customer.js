@@ -19,11 +19,11 @@ const OurCustomer = () => {
               description="Né de l’expérience, et de celle heureuse ou malheureuse de tout un chacun qui s’est un jour lancé dans un projet de construction de rénovation de travaux. Parce que votre projet représente sans doute une étape importante de votre vie, il mérite pour nous autant de cette attention que vous-même lui attacher.
               Vous qui avez un projet de Construction ou de Rénovation de Travaux, n’hésitez pas à nous contacter ."
             />
-            <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
+            {/* <Box sx={{ textAlign: ['center', 'center', 'center', 'left'] }}>
               <Link variant="links.learnMore" sx={styles.link} href="#!">
                 Savoir plus. <RiArrowRightSLine size="20px" />
               </Link>
-            </Box>
+            </Box> */}
           </Box>
         </Flex>
       </Container>
