@@ -172,6 +172,7 @@ export default {
       display: ['block', , , , 'none'],
       svg: {
         width: '32px',
+        fill: '#4BB479'
       },
     }, // default variant for MenuButton
     // you can reference other values defined in the theme

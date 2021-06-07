@@ -25,31 +25,31 @@ export default function IndexPage() {
       <Layout>
         <SEO title="Travaux Divers - MaTechSo Template" />
         <Banner />
-        <InView threshold="0.5">
+        <InView threshold="0.1">
           {({ ref, inView }) => (
             <motion.div ref={ref} initial={{ opacity: 0 }}
             animate={inView ? {opacity: 1} : {opacity: 0}}
-            transition={{ duration: 0.8 }}>
+            transition={{ duration: 0.4 }}>
               <FeaturedSpace    />
             </motion.div>
           )}
         </InView>
-        <InView threshold="0.25">
+        <InView threshold="0.1">
           {({ref, inView}) => (
             <motion.div ref={ref} initial={{ opacity: 0 }}
               animate={inView ? {opacity: 1} : {opacity: 0}}
-              transition={{ duration: 0.8 }}>
+              transition={{ duration: 0.4 }}>
                 <Gallery />
             </motion.div>
           )}
         </InView>
         
         <Numbers />
-        <InView threshold="0.55">
+        <InView threshold="0.1">
           {({ref, inView}) => (
             <motion.div ref={ref} initial={{ opacity: 0, y: -200 }}
               animate={inView ? {opacity: 1, y: 0} : {opacity: 0, y: -200}}
-              transition={{ duration: 0.8 }}>
+              transition={{ duration: 0.4 }}>
                 <Clients />
             </motion.div>
           )}

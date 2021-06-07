@@ -64,7 +64,7 @@ export default function Header() {
 
               {mobileMenu ? (
                 <Button variant="text" sx={styles.closeButton}>
-                  <GrClose onClick={closeMobileMenu} size="20px" />
+                  <GrClose color="#4BB479" onClick={closeMobileMenu} size="20px" />
                 </Button>
               ) : (
                 <MenuButton
